@@ -21,7 +21,7 @@
 
 
 button{
-    display: flex;
+    display: inline-block;
     display: -webkit-flex;
     align-items: center;
     -webkit-align-items: center;
