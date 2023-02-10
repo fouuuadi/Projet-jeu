@@ -1,4 +1,41 @@
+.fond_ecran{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.titre_editeur{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
 button{
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    text-decoration: none;
+    width: 300px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: tahoma;
+    font-size: 1.5em;
+    color: #000000;
+    background-color: #fbd5b5;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    border: 3px solid #f79646;
+    box-shadow: 3px 3px 12px #f79646;
+    -webkit-box-shadow: 3px 3px 12px #f79646;
+    -moz-box-shadow: 3px 3px 12px #f79646;
+}
+a{
     display: flex;
     display: -webkit-flex;
     align-items: center;
