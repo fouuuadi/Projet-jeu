@@ -1,25 +1,19 @@
-var chicken = document.getElementById('chicken');
-var obstacle = document.getElementById('obstacle');
-var counter = 0;
+const pnj = document.getElementById("pnj");
 
 function jump() {
-    if (chicken.classList != "animate") {
-        chicken.classList.add("animate");
+    if (pnj.classList != "jump") {
+        pnj.classList.add("jump");
+
+        setTimeout(function() {
+            pnj.classList.remove("jump");
+        }, 300)
     }
-    setTimeout(function() {
-        chicken.classList.remove("animate");
-        counter++;
-    }, 500);
+
 }
 
-var lose = setInterval(function() {
-    var chickenTop = parseInt(window.getComputedStyle(chicken).getPropertyValue("top"));
-    var blockLeft = parseInt(window.getComputedStyle(obstacle).getPropertyValue("left"));
-    if (blockLeft < 20 && blockLeft > 0 && chickenTop >= 130) {
-        obstacle.style.animation = "none";
-        obstacle.style.display = "none";
-        alert("SCORE:" + counter);
-        counter = 0;
-
-    }
-}, 10);
+let inAlive = setInterval(function(){
+    let pnjTop = window
+})
+document.addEventListener("keydown", function(event) {
+    jump();
+});
