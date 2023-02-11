@@ -1,4 +1,5 @@
 const pnj = document.getElementById("pnj");
+const obstacle = document.getElementById("obstacle");
 
 function jump() {
     if (pnj.classList != "jump") {
@@ -6,14 +7,27 @@ function jump() {
 
         setTimeout(function() {
             pnj.classList.remove("jump");
-        }, 300)
+        }, 300);
     }
 
 }
 
-let inAlive = setInterval(function(){
-    let pnjTop = window
-})
+let isAlive = setInterval(function() {
+    // position pnj Y position
+    let pnjTop = parseInt(window.getComputedStyle(pnj).getPropertyValue("top"));
+
+    // position caisse X position
+    let obstacleLeft = parseInt(
+        window.getComputedStyle(obstacle).getPropertyValue("left")
+    );
+
+    // detection collision
+    if (obstacleLeft < 50 && obstacleLeft > 0 && pnjTop >= 140) {
+        // collision
+        alert("Game Over!");
+    }
+}, 10);
+
 document.addEventListener("keydown", function(event) {
     jump();
-});
+})
