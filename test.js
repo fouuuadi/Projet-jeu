@@ -8,12 +8,12 @@ function jump() {
 
         setTimeout(function() {
             pnj.classList.remove("jump");
-        }, 300);
+        }, 500);
     }
 
 }
 
-let isAlive = setInterval(function() {
+/*let isAlive = setInterval(function() {
     // position pnj Y position
     let pnjTop = parseInt(window.getComputedStyle(pnj).getPropertyValue("top"));
 
@@ -27,9 +27,11 @@ let isAlive = setInterval(function() {
         // collision
         alert("Game Over!");
     }
-}, 10);
+}, 10);*/
 
 
 document.addEventListener("keydown", function(event) {
-    jump();
+    if (event.code === "Space") {
+        jump();
+    }
 })

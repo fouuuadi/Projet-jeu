@@ -14,29 +14,43 @@
     position: relative;
     top: 400px;
     left: 50px;
+    transition: all;
+    animation: run 1s infinite linear;
+}
+
+@keyframes run {
+    0% {
+        background-image: url(assets/png/run1.png);
+    }
+    12.5% {
+        background-image: url(assets/png/run2.png);
+    }
+    25% {
+        background-image: url(assets/png/run3.png);
+    }
+    37.5% {
+        background-image: url(assets/png/run4.png);
+    }
+    50% {
+        background-image: url(assets/png/run5.png);
+    }
+    62.5% {
+        background-image: url(assets/png/run6.png);
+    }
+    75% {
+        background-image: url(assets/png/run7.png);
+    }
+    87.5% {
+        background-image: url(assets/png/run8.png);
+    }
+    100% {
+        background-image: url(assets/png/run1png);
+    }
 }
 
 .jump {
     animation: jump 0.3s linear;
 }
-
-
-/*
-background-image: url(image1.png), url(image2.png), url(image3.png);
-background-repeat: no-repeat;
-background-position: 0 0, 100% 0, 200% 0;
-animation: animation-name 4s steps(3, end) infinite;
-}
-
-@keyframes animation-name {
-0% {
-    background-position: 0 0, 100% 0, 200% 0;
-}
-100% {
-    background-position: -100% 0, 0 0, 100% 0;
-}
-}
-*/
 
 @keyframes jump {
     0% {
