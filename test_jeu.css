@@ -13,27 +13,46 @@
     background-size: 100px 100px;
     position: relative;
     top: 400px;
+    left: 50px;
 }
 
 .jump {
     animation: jump 0.3s linear;
 }
 
+
+/*
+background-image: url(image1.png), url(image2.png), url(image3.png);
+background-repeat: no-repeat;
+background-position: 0 0, 100% 0, 200% 0;
+animation: animation-name 4s steps(3, end) infinite;
+}
+
+@keyframes animation-name {
+0% {
+    background-position: 0 0, 100% 0, 200% 0;
+}
+100% {
+    background-position: -100% 0, 0 0, 100% 0;
+}
+}
+*/
+
 @keyframes jump {
     0% {
-        top: 150px;
+        top: 400px;
     }
     30% {
-        top: 100px;
+        top: 300px;
     }
     50% {
-        top: 50px;
+        top: 250px;
     }
     80% {
-        top: 100px;
+        top: 300px;
     }
     100% {
-        top: 150px;
+        top: 400px;
     }
 }
 
@@ -45,12 +64,12 @@
     left: 580px;
     background-image: url(caisse_en_bois.png);
     background-size: 50px 50px;
-    animation: block 1s infinite linear;
+    animation: block 2s infinite linear;
 }
 
 @keyframes block {
     0% {
-        left: 580px;
+        left: 600px;
     }
     100% {
         left: -20px;

@@ -1,5 +1,6 @@
-const pnj = document.getElementById("pnj");
-const obstacle = document.getElementById("obstacle");
+console.log("hello")
+let pnj = document.getElementById("pnj");
+let obstacle = document.getElementById("obstacle");
 
 function jump() {
     if (pnj.classList != "jump") {
@@ -27,6 +28,7 @@ let isAlive = setInterval(function() {
         alert("Game Over!");
     }
 }, 10);
+
 
 document.addEventListener("keydown", function(event) {
     jump();
