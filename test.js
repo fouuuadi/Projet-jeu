@@ -12,7 +12,18 @@ function jump() {
     }
 
 }
+/*
+function slide() {
+    if (pnj.classList != "slide") {
+        pnj.classList.add("slide");
 
+        setTimeout(function() {
+            pnj.classList.remove("slide");
+        }, 500);
+    }
+
+}
+*/
 let isAlive = setInterval(function() {
     // position pnj Y position
     let pnjTop = parseInt(window.getComputedStyle(pnj).getPropertyValue("top"));
