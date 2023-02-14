@@ -13,22 +13,22 @@
     background-position: center;
     margin: auto;
 }
+
 .titre_editeur{
     color: #f79646;
     font-size: 40px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 button{
-    display: inline-block;
-    display: -webkit-flex;
-    align-items: center;
-    -webkit-align-items: center;
+    display: flex;
     justify-content: center;
-    -webkit-align-items: center;
     text-decoration: none;
-    width: 300px;
+    width: 200px;
     margin: 0 auto;
     padding: 1rem;
     font-family: tahoma;
@@ -43,15 +43,15 @@ button{
     -webkit-box-shadow: 3px 3px 12px #f79646;
     -moz-box-shadow: 3px 3px 12px #f79646;
 }
+
 a{
     display: flex;
+    flex-wrap: wrap;
     display: -webkit-flex;
-    align-items: center;
-    -webkit-align-items: center;
+    align-items: end;
     justify-content: center;
-    -webkit-align-items: center;
     text-decoration: none;
-    width: 300px;
+    width: 200px;
     margin: 0 auto;
     padding: 1rem;
     font-family: tahoma;
@@ -66,3 +66,9 @@ a{
     -webkit-box-shadow: 3px 3px 12px #f79646;
     -moz-box-shadow: 3px 3px 12px #f79646;
 }
+
+div a{
+
+    position: absolute; bottom: 20px; right: 20px;
+}
+
