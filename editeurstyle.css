@@ -24,6 +24,7 @@ body{
     color: #f79646;
     font-size: 40px;
     font-weight: bold;
+<<<<<<< HEAD
 =======
     background-position: center;
 }
@@ -40,20 +41,38 @@ button{
 
 #btn1{
     display: flex;
+=======
+}
+
+
+button{
+    display: inline-block;
+    display: -webkit-flex;
+>>>>>>> parent of b43aac7 (Update editeurstyle.css)
     align-items: center;
+    -webkit-align-items: center;
     justify-content: center;
+    -webkit-align-items: center;
     text-decoration: none;
-    margin: 15px 2px;
+    width: 300px;
+    margin: 0 auto;
     padding: 1rem;
     font-family: tahoma;
     font-size: 1.5em;
     color: #000000;
     background-color: #fbd5b5;
     border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
     border: 3px solid #f79646;
     box-shadow: 3px 3px 12px #f79646;
+<<<<<<< HEAD
     position:fixed; bottom: 1px; left:60px
     
+=======
+    -webkit-box-shadow: 3px 3px 12px #f79646;
+    -moz-box-shadow: 3px 3px 12px #f79646;
+>>>>>>> parent of b43aac7 (Update editeurstyle.css)
 }
 #btn2{
     display: flex;
