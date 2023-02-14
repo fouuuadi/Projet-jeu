@@ -1,29 +1,44 @@
+<<<<<<< Updated upstream
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+body{
+    background:url(./image.jpg) center/cover;
+    min-height: 100vh;
+}
+=======
+>>>>>>> Stashed changes
 .fond_ecran{
     height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(image.jpg);
     background-size: cover;
-    background-position: center;
-    margin: auto;
+<<<<<<< Updated upstream
+ 
 }
+
 .titre_editeur{
     color: #f79646;
     font-size: 40px;
     font-weight: bold;
+=======
+    background-position: center;
+}
+
+
+
+button{
+>>>>>>> Stashed changes
     display: flex;
     text-align: center;
     justify-content: center;
 }
 
 
-button{
+#btn1{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,29 +52,90 @@ button{
     border-radius: 24px;
     border: 3px solid #f79646;
     box-shadow: 3px 3px 12px #f79646;
-    /*position:absolute; bottom: 1px; right: 2px*/
+    position:fixed; bottom: 1px; left:60px
     
 }
-a{
+#btn2{
     display: flex;
-    display: -webkit-flex;
     align-items: center;
-    -webkit-align-items: center;
     justify-content: center;
-    -webkit-align-items: center;
     text-decoration: none;
-    width: 300px;
-    margin: 0 auto;
+    margin: 15px 2px;
     padding: 1rem;
     font-family: tahoma;
     font-size: 1.5em;
     color: #000000;
     background-color: #fbd5b5;
     border-radius: 24px;
-    -webkit-border-radius: 24px;
-    -moz-border-radius: 24px;
     border: 3px solid #f79646;
     box-shadow: 3px 3px 12px #f79646;
-    -webkit-box-shadow: 3px 3px 12px #f79646;
-    -moz-box-shadow: 3px 3px 12px #f79646;
+    position:fixed; bottom: 1px; left:400px 
+}
+#btn3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 15px 2px;
+    padding: 1rem;
+    font-family: tahoma;
+    font-size: 1.5em;
+    color: #000000;
+    background-color: #fbd5b5;
+    border-radius: 24px;
+    border: 3px solid #f79646;
+    box-shadow: 3px 3px 12px #f79646;
+    position:fixed; bottom: 1px; left: 800px
+}
+#btn4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 15px 2px;
+    padding: 1rem;
+    font-family: tahoma;
+    font-size: 1.5em;
+    color: #000000;
+    background-color: #fbd5b5;
+    border-radius: 24px;
+    border: 3px solid #f79646;
+    box-shadow: 3px 3px 12px #f79646;
+    position:fixed; bottom: 1px; left: 1200px
+}
+
+a{
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    font-family: tahoma;
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+    background-color: rgb(251, 213, 181);
+    box-shadow: rgb(247, 150, 70) 3px 3px 12px;
+    text-decoration: none;
+    margin:auto;
+    padding: 1rem;
+    border-radius: 24px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(247, 150, 70);
+    border-image: initial;
+    position:fixed; top: 70px; right:650px
+}
+#Texte{
+    padding: 1rem;
+    position:fixed; top: 280px; left:50px 
+    
+}
+input{
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(247, 150, 70);
+}
+table{
+    border-style: solid;
+    border: 2px;
 }
