@@ -14,7 +14,7 @@
     position: relative;
     top: 400px;
     left: 50px;
-    transition: all;
+    transition: all 10s;
     animation: run 1s infinite linear;
 }
 
@@ -48,7 +48,7 @@
     }
 }
 
-.jump {
+#pnj.jump {
     animation: jump 0.3s linear;
 }
 
@@ -70,9 +70,9 @@
     }
 }
 
-#obstacle {
-    width: 50px;
-    height: 50px;
+#caisse {
+    width: 40px;
+    height: 40px;
     position: relative;
     top: 350px;
     left: 580px;
@@ -90,4 +90,18 @@
     }
 }
 
-@keyframes slide {}
+
+/*
+@keyframes slide {
+    0% {
+        top: 350px
+    }
+    100% {
+        top: 450px
+    }
+}
+
+#pnj .slide {
+    background-image: url(assets/png/Slide1.png);
+    animation: slide 0.3s linear;
+}
