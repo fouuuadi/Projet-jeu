@@ -27,7 +27,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  position: sticky;
   bottom: 15%;
   left: 26%;
 }
@@ -92,7 +92,7 @@ div a {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1263px) {
+@media screen and (min-width: 768px) and (max-width: 1370px) {
   .button-container {
     display: flex;
     flex-direction: row;
@@ -106,7 +106,7 @@ div a {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1371px) {
   .button-container {
     flex-direction: row;
     justify-content: center;
