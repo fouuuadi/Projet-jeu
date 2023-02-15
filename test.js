@@ -12,7 +12,7 @@ function jump() {
     }
 
 }
-/*
+
 function slide() {
     if (pnj.classList != "slide") {
         pnj.classList.add("slide");
@@ -23,7 +23,7 @@ function slide() {
     }
 
 }
-*/
+
 let isAlive = setInterval(function() {
     // position pnj Y position
     let pnjTop = parseInt(window.getComputedStyle(pnj).getPropertyValue("top"));
@@ -42,7 +42,9 @@ let isAlive = setInterval(function() {
 
 
 document.addEventListener("keydown", function(event) {
-    if (event.code === "Space") {
+    if (event.key === "m") {
         jump();
+    } else if (event.key === "l") {
+        slide();
     }
 })

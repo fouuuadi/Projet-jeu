@@ -53,7 +53,7 @@ body {
 }
 
 #pnj.jump {
-    animation: jump 0.3s linear;
+    animation: jump 0.6s linear;
 }
 
 @keyframes jump {
@@ -92,6 +92,21 @@ body {
     100% {
         left: -20px;
     }
+}
+
+@keyframes saut {
+    0% {
+        top: 450px
+    }
+    100% {
+        top: 450px
+    }
+}
+
+#pnj .slide {
+    background-image: url(assets/png/Slide1.png);
+    background-size: 100px 100px;
+    animation: saut 0.6s linear;
 }
 
 #sol1 {
@@ -171,19 +186,4 @@ body {
     background-image: url(Tiles/fin_bloc_sol.png);
     background-size: 100px 100px;
     left: 700PX;
-}
-
-@keyframes slide {
-    0% {
-        top: 450px
-    }
-    100% {
-        top: 450px
-    }
-}
-
-#pnj .slide {
-    background-image: url(assets/png/Slide1.png);
-    background-size: 100px 100px;
-    animation: slide 0.3s linear;
 }
