@@ -77,6 +77,7 @@ nav ul li a:hover {
   -webkit-box-shadow: 3px 3px 12px #f79646;
   -moz-box-shadow: 3px 3px 12px #f79646;
 }
+
 button{
     display: flex;
     display: -webkit-flex;
@@ -86,8 +87,6 @@ button{
     -webkit-align-items: center;
     text-decoration: none;
     width: 300px;
-    margin: 0 auto;
-    padding: 1rem;
     font-family: tahoma;
     font-size: 1.5em;
     color: #000000;
@@ -99,6 +98,14 @@ button{
     box-shadow: 3px 3px 12px #f79646;
     -webkit-box-shadow: 3px 3px 12px #f79646;
     -moz-box-shadow: 3px 3px 12px #f79646;
+}
+
+.button-container{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: end;
+  justify-content:space-evenly;
+  margin: 15rem;
 }
 
 .button:hover {
