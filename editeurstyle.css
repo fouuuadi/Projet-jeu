@@ -52,6 +52,12 @@ button {
   -moz-box-shadow: 3px 3px 12px #f79646;
 }
 
+button:hover {
+  background-position: center;
+  padding: 16px;
+  background-color: #f79646;
+}
+
 a {
   display: flex;
   flex-wrap: wrap;
@@ -73,6 +79,12 @@ a {
   box-shadow: 3px 3px 12px #f79646;
   -webkit-box-shadow: 3px 3px 12px #f79646;
   -moz-box-shadow: 3px 3px 12px #f79646;
+}
+
+a:hover{
+  background-position: center;
+  padding: 16px;
+  background-color: #f79646;
 }
 
 div a {
