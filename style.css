@@ -101,11 +101,13 @@ button{
 }
 
 .button-container{
+  width: 100%;
+  height: 300px;
   display: flex;
-  flex-wrap: nowrap;
   align-items: end;
   justify-content:space-evenly;
-  margin: 15rem;
+  margin: 10px;
+  padding: ;
 }
 
 .button:hover {
