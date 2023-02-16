@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+#container {
+    height: 400px;
+    width: 1200px;
+    position: relative;
+    overflow: hidden;
+}
+
+#container #player {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    bottom: 28px;
+    left: 20px;
+    animation: animationPlayer 1s linear infinite;
+}
+
+#container #player img {
+    height: 70px;
+    width: 70px;
+}
+
+@keyframes animationPlayer {
+    0%,
+    100% {
+        bottom: 28%;
+    }
+    45%,
+    55% {
+        bottom: 160px;
+    }
+}

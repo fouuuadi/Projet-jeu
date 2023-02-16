@@ -2,6 +2,8 @@ console.log("hello")
 let pnj = document.getElementById("pnj");
 let caisse = document.getElementById("caisse");
 
+pnj.classList.add("stand")
+
 function jump() {
     if (pnj.classList != "jump") {
         pnj.classList.add("jump");
@@ -15,7 +17,8 @@ function jump() {
 
 function slide() {
     if (pnj.classList != "slide") {
-        pnj.classList.add("slide");
+        pnj.classList.remove("stand");
+        pnj.classList.add("slide")
 
         setTimeout(function() {
             pnj.classList.remove("slide");
