@@ -154,7 +154,18 @@ input{
     border-width: 3px;
     border-color: rgb(247, 150, 70);
 }
+<<<<<<< Updated upstream
 table{
     border-style: solid;
     border: 2px;
 }
+=======
+td,th,table{
+  border-radius: 24px;
+  background-color: #fbd5b5;
+  padding: 1em 2em;
+  margin: auto;
+  border: 2px solid;
+  font-family: 'Oswald', sans-serif;
+}
+>>>>>>> Stashed changes
