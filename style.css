@@ -177,6 +177,7 @@ button{
   font-size: 50px;
   font-weight: bold;
   text-transform:uppercase ;
+  text-decoration:  underline;
   display: flex;
   text-align: center;
   justify-content: center
@@ -196,9 +197,40 @@ button{
   display:flex;
   align-items: center;
   justify-content: space-evenly;
+  
 }
 
 .titre_editeur:hover{
+  background-position: center;
+  padding: 16px;
+  background-color: #f79646;
+}
+.edit-level{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 250px;
+  margin: 0 30px;
+  padding: 1rem;
+  font-family: tahoma;
+  font-size: 1.5em;
+  color: #000000;
+  background-color: #fbd5b5;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  border: 3px solid #f79646;
+  box-shadow: 3px 3px 12px #f79646;
+  -webkit-box-shadow: 3px 3px 12px #f79646;
+  -moz-box-shadow: 3px 3px 12px #f79646;
+  position:absolute;
+  left: 42%;
+  bottom: 150px;
+}
+
+
+.edit-level:hover{
   background-position: center;
   padding: 16px;
   background-color: #f79646;
