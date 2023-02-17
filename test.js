@@ -1,8 +1,23 @@
 console.log("hello")
 let pnj = document.getElementById("pnj");
 let caisse = document.getElementById("caisse");
+let score = document.querySelector("#score");
+let gameOver = document.querySelector("#gameOver");
+
+//variable pour le score
+let interval = null;
+let playerScore = 0;
+
+//function pour le score
+let scoreCounter = () => {
+    playerScore++;
+    score.innerHTML = `score <b>${playerScore}</b>`;
+}
+interval = setInterval(scoreCounter, 200);
 
 
+
+//function pour sauter
 function jump() {
     if (pnj.classList != "jump") {
         pnj.classList.add("jump");
@@ -13,7 +28,7 @@ function jump() {
     }
 
 }
-
+//function pour glisser 
 function slide() {
     if (pnj.classList != "slide") {
         pnj.classList.add("slide");
@@ -41,7 +56,7 @@ let isAlive = setInterval(function() {
     }
 }, 10);
 
-
+//Touche pour les 2 functions jump et slide
 document.addEventListener("keydown", function(event) {
     if (event.key === "m") {
         jump();
