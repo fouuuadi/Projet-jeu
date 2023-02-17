@@ -1,131 +1,131 @@
 /*page INDEX*/
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .fond_ecran {
-    height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(image.jpg);
-    background-size: cover;
-    background-position: center;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(image.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 40px;
-    padding-left: 10%;
-    padding-right: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .logo {
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 span {
-    color: #f79646;
+  color: #f79646;
 }
 
 nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 10px 20px;
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
 }
 
 nav ul li a {
-    color: #f79646;
-    text-decoration: none;
-    font-weight: bold;
+  color: #f79646;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #fbd5b5;
-    transition: 0.3s;
+  color: #fbd5b5;
+  transition: 0.3s;
 }
-
 
 /*LE BOUTON PLAY*/
 
 .button {
-    display: flex;
-    display: -webkit-flex;
-    align-items: center;
-    -webkit-align-items: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    text-decoration: none;
-    width: 300px;
-    margin: 0 auto;
-    padding: 1rem;
-    font-family: tahoma;
-    font-size: 1.5em;
-    color: #000000;
-    background-color: #fbd5b5;
-    border-radius: 24px;
-    -webkit-border-radius: 24px;
-    -moz-border-radius: 24px;
-    border: 3px solid #f79646;
-    box-shadow: 3px 3px 12px #f79646;
-    -webkit-box-shadow: 3px 3px 12px #f79646;
-    -moz-box-shadow: 3px 3px 12px #f79646;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  text-decoration: none;
+  width: 300px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: tahoma;
+  font-size: 1.5em;
+  color: #000000;
+  background-color: #fbd5b5;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  border: 3px solid #f79646;
+  box-shadow: 3px 3px 12px #f79646;
+  -webkit-box-shadow: 3px 3px 12px #f79646;
+  -moz-box-shadow: 3px 3px 12px #f79646;
+  z-index: 1;
 }
 
 
 
 .button:hover {
-    background-position: center;
-    padding: 16px;
-    background-color: #f79646;
+  background-position: center;
+  padding: 16px;
+  background-color: #f79646;
 }
-
 
 /*page About*/
 
 .titre_propro {
-    display: flex;
-    display: -webkit-flex;
-    align-items: center;
-    -webkit-align-items: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    text-decoration: none;
-    width: 300px;
-    margin: 0 auto;
-    padding: 1rem;
-    color: #f79646;
-    font-size: 40px;
-    font-weight: bold;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  text-decoration: none;
+  width: 300px;
+  margin: 0 auto;
+  padding: 1rem;
+  color: #f79646;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .text_explication {
-    display: flex;
-    display: -webkit-flex;
-    align-items: center;
-    -webkit-align-items: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    text-decoration: none;
-    width: 300px;
-    margin: 0 auto;
-    padding: 1rem;
-    color: black;
-    border: 5px solid #f79646;
-    border-radius: 2rem;
-    text-align: center;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  text-decoration: none;
+  width: 300px;
+  margin: 0 auto;
+  padding: 1rem;
+  color: black;
+  border: 5px solid #f79646;
+  border-radius: 2rem;
+  text-align: center;
 }
-
 
 /*page EDITEUR*/
 
 .titre_editeur {
+<<<<<<< Updated upstream
     color: #f79646;
     font-size: 40px;
     font-weight: bold;
@@ -138,3 +138,12 @@ input{
     font-size: 40px;
     font-weight: bold;  
 }
+=======
+  color: #f79646;
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+>>>>>>> Stashed changes
