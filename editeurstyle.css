@@ -88,7 +88,7 @@ button{
     border-radius: 24px;
     border: 3px solid #f79646;
     box-shadow: 3px 3px 12px #f79646;
-  
+    position:fixed; bottom: 1px; left:400px 
 }
 #btn3{
     display: flex;
