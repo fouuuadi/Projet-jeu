@@ -1,19 +1,20 @@
 let pnj = document.getElementById("pnj");
 let caisse = document.getElementById("caisse");
-let score = document.querySelector("#score");
+let scoreElement = document.querySelector("#score");
 let gameOver = document.querySelector("#gameOver");
 let menu_start_resume = document.getElementsByClassName("menu_option_mid");
 let block = document.getElementsByClassName("bottomBackground");
 let pause_menu = document.getElementsByClassName("pause_menu");
-
+var root = document.querySelector(':root');
+var rootStyles = getComputedStyle(root);
 
 //variable pour le score
 let interval = null;
 let playerScore = 0;
 let isGameResume = false;
 let isGameStart = false;
-
-console.log(isGameResume)
+let isPnjCrouch = false;
+let score = 0;
 
 //function pour le score
 let scoreCounter = () => {
@@ -26,20 +27,22 @@ interval = setInterval(scoreCounter, 200);
 document.addEventListener("keydown", function(event) {
     if (event.key === "g") {
         isGameResume = false
-        console.log(isGameResume)
         menu_start_resume[0].innerHTML = 'G = Commencer'
         startGame()
     }
 })
 
+pause_game = () => {
+    menu_start_resume[0].innerHTML = 'P = Reprendre'
+    displayBackgroundOrMenu('paused', 'none')
+    isGameResume = false
+}
+
 document.addEventListener("keydown", function(event) {
     if (event.key === "p") {
-        console.log(isGameStart)
         if (isGameStart) {
             if (isGameResume) {
-                menu_start_resume[0].innerHTML = 'P = Reprendre'
-                displayBackgroundOrMenu('paused', 'block')
-                isGameResume = false
+                pause_game()
             } else {
                 displayBackgroundOrMenu('running', 'none')
                 isGameResume = true
@@ -48,6 +51,8 @@ document.addEventListener("keydown", function(event) {
     }
 })
 
+
+
 displayBackgroundOrMenu = (att, menu) => {
     caisse.style = `animation-play-state: ${att};`
     pnj.style = `animation-play-state: ${att}`
@@ -55,13 +60,15 @@ displayBackgroundOrMenu = (att, menu) => {
 }
 
 startGame = () => {
-    //pnj block
-    //caisse block
-    //bottomBackground block
+    root.style.setProperty('--speed', '1.5s');
+    console.log(caisse.style)
     console.log('ingame')
     isGameResume = true;
     isGameStart = true;
     displayBackgroundOrMenu('running', 'none')
+
+    caisse.style = `animation-play-state: running;`
+
 
 }
 
@@ -113,18 +120,32 @@ let isAlive = setInterval(function() {
         window.getComputedStyle(caisse).getPropertyValue("left")
     );
 
+
+    var speed = rootStyles.getPropertyValue('--speed').split('s')[0];
+    console.log(speed)
+
     // detection collision
-    if (caisseLeft < 50 && caisseLeft > 0 && pnjTop >= 140) {
+    if ((caisseLeft < 120) && !isPnjCrouch) {
         // collision
+        pause_game()
+        console.log('finito')
         alert("Game Over!");
     }
 }, 10);
+
 
 //Touche pour les 2 functions jump et slide
 document.addEventListener("keydown", function(event) {
     if (event.key === "m") {
         jump();
     } else if (event.key === "l") {
+        isPnjCrouch = true
         slide();
+    }
+})
+
+document.addEventListener("keyup", function(event) {
+    if (event.key === "l") {
+        isPnjCrouch = false
     }
 })
