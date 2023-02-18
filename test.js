@@ -24,7 +24,7 @@ function jump() {
 
         setTimeout(function() {
             pnj.classList.remove("jump");
-        }, 500);
+        }, 1000);
     }
 
 }
