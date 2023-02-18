@@ -177,10 +177,9 @@ button{
   font-size: 50px;
   font-weight: bold;
   text-transform:uppercase ;
-  text-decoration:  underline;
   display: flex;
-  text-align: center;
-  justify-content: center
+  align-items: center;
+  justify-content: center;
 }
 .level{
   height: 100vh;
