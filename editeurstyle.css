@@ -169,9 +169,10 @@ section{
 }
 
 span {
-  font-size: 200px;
+  font-size: 150px;
   font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
   color: #fbd5b5;
   opacity: 0.3;
 }
