@@ -6,10 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="test_jeu.css">
+    <link rel="stylesheet" href="menu.css">
     <title>Document</title>
 </head>
 
 <body>
+
+    <div class="container pause_menu">
+        <div class="container_header">
+            <p class="menu_pause">Menu pause</p>
+        </div>
+        <div>
+            <h1 class="menu_option menu_option_mid"></h1>
+        </div>
+        <div data-menu_1="1" class="menu_1">
+            <div>
+                <a href="" class="menu_option">R = Recommencer</a>
+            </div>
+            <div>
+                <a href="" class="menu_option">Q = Quitter</a>
+            </div>
+        </div>
+        <div data-menu_2="2" class="menu_2">
+            <div>
+                <a href="" class="menu_option">L = Sauter</a>
+            </div>
+            <div>
+                <a href="" class="menu_option">K = S'accroupir</a>
+            </div>
+        </div>
+    </div>
+
     <div class="fond"></div>
     <div class="game">
         <div id="pnj" class="run"></div>
@@ -18,14 +45,16 @@
         <div id="caisse"></div>
         <div id="champ"></div>
         <div id="bush"></div>
-        <div id="sol1"></div>
-        <div id="sol2"></div>
-        <div id="sol3"></div>
-        <div id="sol4"></div>
-        <div id="sol5"></div>
-        <div id="sol6"></div>
-        <div id="sol7"></div>
-        <div id="sol8"></div>
+        <section class="bottomBackground">
+            <div id="sol1"></div>
+            <div id="sol2"></div>
+            <div id="sol3"></div>
+            <div id="sol4"></div>
+            <div id="sol5"></div>
+            <div id="sol6"></div>
+            <div id="sol7"></div>
+            <div id="sol8"></div>
+        </section>
     </div>
     <script src="test.js"></script>
 
