@@ -1,5 +1,5 @@
 :root {
-    --speed: 1s;
+    --speed: 1;
 }
 
 .game {
@@ -18,14 +18,6 @@ body {
     background-size: cover;
     background-position: center;
     overflow-y: hidden;
-}
-
-#score {
-    height: auto;
-    width: auto;
-    position: absolute;
-    top: 20px;
-    right: 0;
 }
 
 #gameOver {
@@ -118,32 +110,25 @@ body {
     left: 580px;
     background-image: url(caisse_en_bois.png);
     background-size: 30px 30px;
-    animation: block var(--speed) infinite linear;
-    animation-play-state: paused
-}
-
-@keyframes block {
-    0% {
-        left: 600px;
-    }
-    100% {
-        left: -20px;
-    }
+    animation-iteration-count: 1;
+    animation-play-state: paused;
+    visibility: visible;
 }
 
 #bush {
     width: 60px;
-    position: relative;
-    top: 270px;
-    left: 580px;
+    height: 60px;
+    position: absolute;
+    top: 440px;
+    margin-left: 150px;
     background-image: url(Object/Bush4.png);
     background-size: 60px 60px;
-    animation: bush 2s;
-    /*animation: block var(--speed) infinite linear;*/
-    /*animation-play-state: paused*/
+    animation-iteration-count: 1;
+    animation-play-state: paused;
+    visibility: hidden;
 }
 
-@keyframes bush {
+@keyframes block {
     0% {
         left: 600px;
     }
@@ -161,6 +146,12 @@ body {
     }
 }
 
+.bottom_background {
+    display: flex;
+    position: relative;
+    top: 355px;
+}
+
 .slide#pnj {
     width: 80px;
     position: relative;
@@ -172,7 +163,6 @@ body {
 #sol1 {
     width: 100px;
     height: 100px;
-    position: relative;
     top: 355px;
     background-image: url(Tiles/debut_bloc_sol.png);
     background-size: 100px 100px;
@@ -181,7 +171,6 @@ body {
 #sol2 {
     width: 100px;
     height: 100px;
-    position: relative;
     top: 255px;
     background-image: url(Tiles/block_sol.png);
     background-size: 100px 100px;
@@ -191,7 +180,6 @@ body {
 #sol3 {
     width: 100px;
     height: 100px;
-    position: relative;
     top: 155px;
     background-image: url(Tiles/block_sol.png);
     background-size: 100px 100px;
@@ -201,7 +189,6 @@ body {
 #sol4 {
     width: 100px;
     height: 100px;
-    position: relative;
     top: 55px;
     background-image: url(Tiles/block_sol.png);
     background-size: 100px 100px;
@@ -211,7 +198,6 @@ body {
 #sol5 {
     width: 100px;
     height: 100px;
-    position: relative;
     top: -45px;
     background-image: url(Tiles/block_sol.png);
     background-size: 100px 100px;
@@ -221,7 +207,6 @@ body {
 #sol6 {
     width: 100px;
     height: 100px;
-    position: relative;
     top: -145px;
     background-image: url(Tiles/block_sol.png);
     background-size: 100px 100px;
@@ -231,7 +216,6 @@ body {
 #sol7 {
     width: 100px;
     height: 100px;
-    position: relative;
     top: -245px;
     background-image: url(Tiles/block_sol.png);
     background-size: 100px 100px;
@@ -241,9 +225,19 @@ body {
 #sol8 {
     width: 100px;
     height: 100px;
-    position: relative;
     top: -345px;
     background-image: url(Tiles/fin_bloc_sol.png);
     background-size: 100px 100px;
     left: 700PX;
+}
+
+#score_background {
+    position: absolute;
+    left: 350px;
+    font-size: 24px;
+    color: #525252;
+}
+
+.game {
+    position: relative;
 }
