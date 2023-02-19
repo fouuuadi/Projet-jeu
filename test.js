@@ -73,7 +73,7 @@ startGame = () => {
 }
 
 if (!isGameResume || !isGameStart) {
-    console.log('je sius dans les menu')
+    console.log('je suis dans les menu')
     menu_start_resume[0].innerHTML = 'G = Commencer'
 
 } else if (!isGameResume && playerScore !== 0) {

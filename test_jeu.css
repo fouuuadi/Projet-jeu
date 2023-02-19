@@ -131,6 +131,27 @@ body {
     }
 }
 
+#bush {
+    width: 60px;
+    position: relative;
+    top: 270px;
+    left: 580px;
+    background-image: url(Object/Bush4.png);
+    background-size: 60px 60px;
+    animation: bush 2s;
+    /*animation: block var(--speed) infinite linear;*/
+    /*animation-play-state: paused*/
+}
+
+@keyframes bush {
+    0% {
+        left: 600px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
 @keyframes slide {
     0% {
         background-image: url(assets/png/Slide1.png);
